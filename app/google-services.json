@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "904150562333",
+    "firebase_url": "https://visitas-a8d9f.firebaseio.com",
+    "project_id": "visitas-a8d9f",
+    "storage_bucket": "visitas-a8d9f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:904150562333:android:c3ec56836125aec3",
+        "android_client_info": {
+          "package_name": "com.progra.kervin.viajes"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "904150562333-9nuvhr3t0vi456rerkkf2chsdrejg2oq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.progra.kervin.viajes",
+            "certificate_hash": "a81f8245399a2ca327cef97264df6b32a579daa9"
+          }
+        },
+        {
+          "client_id": "904150562333-qtoqft4olniop90lk5valr2urdkmpmkf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAFTtm4P7sw7w7dMZghOV9TXt51WCFr3Tg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "904150562333-qtoqft4olniop90lk5valr2urdkmpmkf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
