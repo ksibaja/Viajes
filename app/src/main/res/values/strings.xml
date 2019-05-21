@@ -1,3 +1,27 @@
 <resources>
     <string name="app_name">Viajes</string>
+
+    <!-- Organizador Variables -->
+    <string name="title_activity_organizador">Organizador</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="nav_header_title">Organizador</string>
+    <string name="nav_header_subtitle">organizador@viajes.com</string>
+
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_config">Ajustes</string>
+    <string name="action_salir">Salir</string>
+
+    <string name="menu_mis_eventos">Mis Eventos</string>
+    <string name="menu_crear">Crear Evento</string>
+    <string name="menu_ver">Ver Eventos</string>
+    <string name="menu_config">Ajustes</string>
+    <string name="menu_salir">Salir</string>
+
+
+    <!-- Crear Evento variables-->
+    <string name="title_activity_crear_evento">Crear Evento</string>
+
+
 </resources>
