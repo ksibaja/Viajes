@@ -20,8 +20,15 @@
     <string name="menu_salir">Salir</string>
 
 
-    <!-- Crear Evento variables-->
+    <!-- Crear Paseo variables-->
     <string name="title_activity_crear_evento">Crear Evento</string>
 
+    <string name="label_nombre">Nombre</string>
+    <string name="label_lugar">Lugar</string>
+    <string name="label_fecha">Fecha</string>
+    <string name="label_costo">Costo</string>
+    <string name="label_descripcion">Descripción</string>
+
+    <string name="button_agregar">Agregar</string>
 
 </resources>
