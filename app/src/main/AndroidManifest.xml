@@ -4,6 +4,8 @@
     package="com.progra.kervin.viajes">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
     <application
         android:allowBackup="true"
@@ -14,17 +16,24 @@
         android:theme="@style/AppTheme"
         tools:ignore="AllowBackup,GoogleAppIndexingWarning">
         <activity
-            android:name=".CrearEventoActivity"
-            android:label="@string/title_activity_crear_evento"
-            android:parentActivityName=".OrganizadorActivity">
+            android:name=".AdminActivity"
+            android:label="@string/title_activity_admin"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".RegistroActivity"
+            android:label="@string/title_registro"
+            android:parentActivityName=".InicioActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".OrganizadorActivity"/>
+                android:value=".InicioActivity" />
         </activity>
         <activity
-            android:name=".OrganizadorActivity"
-            android:label="@string/title_activity_organizador"
-            android:theme="@style/AppTheme.NoActionBar">
+            android:name=".UsuarioActivity"
+            android:label="@string/title_usuario"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".InicioActivity"
+            android:label="@string/title_inicio">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -32,9 +41,21 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".MainActivity"
-            android:label="@string/app_name">
+            android:name=".InvitadoActivity"
+            android:label="@string/title_invitado"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".CrearEventoActivity"
+            android:label="@string/title_crear_evento"
+            android:parentActivityName=".OrganizadorActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".OrganizadorActivity" />
         </activity>
+        <activity
+            android:name=".OrganizadorActivity"
+            android:label="@string/title_organizador"
+            android:theme="@style/AppTheme.NoActionBar" />
     </application>
 
 </manifest>

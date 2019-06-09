@@ -15,15 +15,23 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 
-public class OrganizadorActivity extends AppCompatActivity
+public class AdminActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_organizador);
+        setContentView(R.layout.activity_admin);
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+        FloatingActionButton fab = findViewById(R.id.fab);
+        fab.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
+                        .setAction("Action", null).show();
+            }
+        });
         DrawerLayout drawer = findViewById(R.id.drawer_layout);
         NavigationView navigationView = findViewById(R.id.nav_view);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
@@ -46,7 +54,7 @@ public class OrganizadorActivity extends AppCompatActivity
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.organizador, menu);
+        getMenuInflater().inflate(R.menu.admin, menu);
         return true;
     }
 
@@ -58,9 +66,7 @@ public class OrganizadorActivity extends AppCompatActivity
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
-        if (id == R.id.action_config) {
-            return true;
-        } else if (id == R.id.action_salir) {
+        if (id == R.id.action_settings) {
             return true;
         }
 
@@ -73,18 +79,19 @@ public class OrganizadorActivity extends AppCompatActivity
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
-        if (id == R.id.nav_propios) {
+        if (id == R.id.nav_home) {
             // Handle the camera action
-        } else if (id == R.id.nav_crear) {
-            Intent crear = new Intent(this, CrearEventoActivity.class);
-            startActivity(crear);
-        } else if (id == R.id.nav_ver) {
+        } else if (id == R.id.nav_gallery) {
 
-        } else if (id == R.id.nav_config) {
+        } else if (id == R.id.nav_slideshow) {
 
-        } else if (id == R.id.nav_salir) {
+        } else if (id == R.id.nav_tools) {
             Intent salir = new Intent(this, InicioActivity.class);
             startActivity(salir);
+        } else if (id == R.id.nav_share) {
+
+        } else if (id == R.id.nav_send) {
+
         }
 
         DrawerLayout drawer = findViewById(R.id.drawer_layout);

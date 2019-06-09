@@ -45,7 +45,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:inputType="textPersonName"
+            android:inputType="date"
             tools:ignore="Autofill,LabelFor" />
     </android.support.design.widget.TextInputLayout>
 
@@ -59,7 +59,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:inputType="textPersonName"
+            android:inputType="number"
             tools:ignore="Autofill,LabelFor" />
     </android.support.design.widget.TextInputLayout>
 
@@ -78,10 +78,22 @@
     </android.support.design.widget.TextInputLayout>
 
     <Button
+        android:id="@+id/btnImagen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:background="#E0F2F1"
+        android:text="@string/btn_imagen"
+        android:textColor="@color/colorPrimary" />
+
+    <Button
         android:id="@+id/btnAgregar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/button_agregar" />
+        android:layout_marginTop="20dp"
+        android:background="@color/colorPrimary"
+        android:text="@string/btn_agregar"
+        android:textColor="#ffffff" />
 
 
 </LinearLayout>

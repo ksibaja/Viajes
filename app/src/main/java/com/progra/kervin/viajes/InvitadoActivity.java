@@ -2,9 +2,6 @@ package com.progra.kervin.viajes;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
-import android.view.View;
 import android.support.v4.view.GravityCompat;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.view.MenuItem;
@@ -15,13 +12,13 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 
-public class OrganizadorActivity extends AppCompatActivity
+public class InvitadoActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_organizador);
+        setContentView(R.layout.activity_invitado);
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         DrawerLayout drawer = findViewById(R.id.drawer_layout);
@@ -46,7 +43,7 @@ public class OrganizadorActivity extends AppCompatActivity
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.organizador, menu);
+        getMenuInflater().inflate(R.menu.invitado, menu);
         return true;
     }
 
@@ -58,9 +55,7 @@ public class OrganizadorActivity extends AppCompatActivity
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
-        if (id == R.id.action_config) {
-            return true;
-        } else if (id == R.id.action_salir) {
+        if (id == R.id.action_settings) {
             return true;
         }
 
@@ -73,14 +68,11 @@ public class OrganizadorActivity extends AppCompatActivity
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
-        if (id == R.id.nav_propios) {
+        if (id == R.id.nav_ver) {
             // Handle the camera action
-        } else if (id == R.id.nav_crear) {
-            Intent crear = new Intent(this, CrearEventoActivity.class);
-            startActivity(crear);
-        } else if (id == R.id.nav_ver) {
+        } else if (id == R.id.nav_login) {
 
-        } else if (id == R.id.nav_config) {
+        } else if (id == R.id.nav_registro) {
 
         } else if (id == R.id.nav_salir) {
             Intent salir = new Intent(this, InicioActivity.class);
