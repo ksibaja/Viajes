@@ -1,3 +1,79 @@
 <resources>
     <string name="app_name">Viajes</string>
+    <string name="txt_view">Elija el tipo de Usuario</string>
+    <string name="txt_user">Usuario</string>
+    <string name="txt_pass">Contraseña</string>
+
+    <!-- Organizador Activity Variables -->
+    <string name="title_organizador">Organizador</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_org_title">Organizador</string>
+    <string name="nav_org_subtitle">organizador@viajes.com</string>
+    <string name="nav_org_desc">Navigation header</string>
+    <string name="action_org_config">Ajustes</string>
+    <string name="action_org_salir">Salir</string>
+    <string name="menu_org_propios">Mis Eventos</string>
+    <string name="menu_org_crear">Crear Evento</string>
+    <string name="menu_org_datos">Estadisticas</string>
+    <string name="menu_org_config">Ajustes</string>
+    <string name="menu_org_salir">Salir</string>
+
+
+    <!-- CrearPaseo Activity Variables -->
+    <string name="title_crear_evento">Crear Evento</string>
+    <string name="label_categoria">Categoría</string>
+    <string name="label_lugar">Nombre del lugar</string>
+    <string name="label_fecha">Fecha</string>
+    <string name="label_costo">Costo</string>
+    <string name="label_descripcion">Detalles</string>
+    <string name="btn_agregar">Agregar</string>
+    <string name="btn_imagen">Seleccionar Imagen</string>
+
+
+    <!-- Invitado Activity Variables-->
+    <string name="title_invitado">Paseos</string>
+    <string name="nav_invitado_title">Usuario Invitado</string>
+    <string name="nav_invitado_desc">Navigation header</string>
+    <string name="action_invitado_config">Ajustes</string>
+    <string name="menu_invitado_ver">Ver Eventos</string>
+    <string name="menu_invitado_buscar">Búsqueda</string>
+    <string name="menu_invitado_registro">Registro</string>
+    <string name="menu_invitado_salir">Salir</string>
+
+
+    <!-- Inicio Activity Variables -->
+    <string name="title_inicio">DePaseo</string>
+    <string name="btn_login">Iniciar Sesión</string>
+    <string name="btn_invitado">Entrar como invitado</string>
+    <string name="btn_registro">Registrarse</string>
+
+
+    <!-- Usuario Activity Variables -->
+    <string name="title_usuario">Paseos</string>
+    <string name="nav_user_title">Cliente</string>
+    <string name="nav_user_subtitle">cliente@gmail.com</string>
+    <string name="nav_user_desc">Navigation header</string>
+    <string name="action_user_config">Ajustes</string>
+    <string name="menu_user_ver">Ver Eventos</string>
+    <string name="menu_user_comprar">Método de Pago</string>
+    <string name="menu_user_config">Ajustes</string>
+    <string name="menu_user_salir">Salir</string>
+
+    <!-- Registro Activity Variables -->
+    <string name="title_registro">Registro</string>
+    <string name="btn_registro_user">Registro de Usuario</string>
+    <string name="btn_registro_org">Registro de Organizador</string>
+    <string name="lbl_regis_nombre">Nombre</string>
+    <string name="lbl_regis_apellido">Apellido</string>
+    <string name="lbl_regis_telefono">Telefono</string>
+    <string name="lbl_regis_correo">Correo electrónico</string>
+    <string name="lbl_regis_contra">Contraseña</string>
+    <string name="lbl_regis_contra2">Confirmar Contraseña</string>
+    <string name="lbl_regis_nombreO">Nombre Organización</string>
+    <string name="lbl_regis_dir">Dirección </string>
+    <string name="lbl_regis_cedula">Cedula jurídica</string>
+    <string name="btn_regis_listo">Registrar</string>
+
+
 </resources>

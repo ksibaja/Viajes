@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_ver"
+            android:title="@string/menu_user_ver" />
+        <item
+            android:id="@+id/nav_buscar"
+            android:title="@string/menu_invitado_buscar" />
+        <item
+            android:id="@+id/nav_pago"
+            android:title="@string/menu_user_comprar" />
+        <item
+            android:id="@+id/nav_config"
+            android:title="@string/menu_user_config" />
+        <item
+            android:id="@+id/nav_salir"
+            android:title="@string/menu_user_salir" />
+    </group>
+
+
+</menu>

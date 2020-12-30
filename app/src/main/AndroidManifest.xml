@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.progra.kervin.viajes">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
     <application
         android:allowBackup="true"
@@ -10,14 +13,78 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        android:theme="@style/AppTheme"
+        tools:ignore="AllowBackup,GoogleAppIndexingWarning">
+        <activity
+            android:name=".AjusteOrgActivity"
+            android:label="Ajustes"
+            android:parentActivityName=".OrganizadorActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".OrganizadorActivity" />
+        </activity>
+        <activity
+            android:name=".PagoActivity"
+            android:label="Metodo de pago"
+            android:parentActivityName=".UsuarioActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".UsuarioActivity" />
+        </activity>
+        <activity
+            android:name=".AjusteUsuarioActivity"
+            android:label="Ajustes"
+            android:parentActivityName=".UsuarioActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".UsuarioActivity" />
+        </activity>
+        <activity android:name=".EventoActivity" />
+        <activity
+            android:name=".RegistroActivity"
+            android:label="@string/title_registro"
+            android:parentActivityName=".InicioActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".InicioActivity" />
+        </activity>
+        <activity
+            android:name=".UsuarioActivity"
+            android:label="@string/title_usuario"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".InicioActivity"
+            android:label="@string/title_inicio">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".InvitadoActivity"
+            android:label="@string/title_invitado"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".CrearEventoActivity"
+            android:label="@string/title_crear_evento"
+            android:parentActivityName=".OrganizadorActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".OrganizadorActivity" />
+        </activity>
+        <activity
+            android:name=".EstadisticaActivity"
+            android:label="Estadisticas"
+            android:parentActivityName=".OrganizadorActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".OrganizadorActivity" />
+        </activity>
+        <activity
+            android:name=".OrganizadorActivity"
+            android:label="@string/title_organizador"
+            android:theme="@style/AppTheme.NoActionBar" />
     </application>
 
 </manifest>
