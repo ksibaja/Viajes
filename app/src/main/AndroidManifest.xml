@@ -16,9 +16,30 @@
         android:theme="@style/AppTheme"
         tools:ignore="AllowBackup,GoogleAppIndexingWarning">
         <activity
-            android:name=".AdminActivity"
-            android:label="@string/title_activity_admin"
-            android:theme="@style/AppTheme.NoActionBar"/>
+            android:name=".AjusteOrgActivity"
+            android:label="Ajustes"
+            android:parentActivityName=".OrganizadorActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".OrganizadorActivity" />
+        </activity>
+        <activity
+            android:name=".PagoActivity"
+            android:label="Metodo de pago"
+            android:parentActivityName=".UsuarioActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".UsuarioActivity" />
+        </activity>
+        <activity
+            android:name=".AjusteUsuarioActivity"
+            android:label="Ajustes"
+            android:parentActivityName=".UsuarioActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".UsuarioActivity" />
+        </activity>
+        <activity android:name=".EventoActivity" />
         <activity
             android:name=".RegistroActivity"
             android:label="@string/title_registro"
@@ -47,6 +68,14 @@
         <activity
             android:name=".CrearEventoActivity"
             android:label="@string/title_crear_evento"
+            android:parentActivityName=".OrganizadorActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".OrganizadorActivity" />
+        </activity>
+        <activity
+            android:name=".EstadisticaActivity"
+            android:label="Estadisticas"
             android:parentActivityName=".OrganizadorActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"

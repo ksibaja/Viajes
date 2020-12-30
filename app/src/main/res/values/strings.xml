@@ -15,18 +15,18 @@
     <string name="action_org_salir">Salir</string>
     <string name="menu_org_propios">Mis Eventos</string>
     <string name="menu_org_crear">Crear Evento</string>
-    <string name="menu_org_ver">Ver Eventos</string>
+    <string name="menu_org_datos">Estadisticas</string>
     <string name="menu_org_config">Ajustes</string>
     <string name="menu_org_salir">Salir</string>
 
 
     <!-- CrearPaseo Activity Variables -->
     <string name="title_crear_evento">Crear Evento</string>
-    <string name="label_nombre">Nombre</string>
-    <string name="label_lugar">Lugar</string>
-    <string name="label_fecha">Fecha: dia/mes/año</string>
+    <string name="label_categoria">Categoría</string>
+    <string name="label_lugar">Nombre del lugar</string>
+    <string name="label_fecha">Fecha</string>
     <string name="label_costo">Costo</string>
-    <string name="label_descripcion">Descripción</string>
+    <string name="label_descripcion">Detalles</string>
     <string name="btn_agregar">Agregar</string>
     <string name="btn_imagen">Seleccionar Imagen</string>
 
@@ -37,7 +37,7 @@
     <string name="nav_invitado_desc">Navigation header</string>
     <string name="action_invitado_config">Ajustes</string>
     <string name="menu_invitado_ver">Ver Eventos</string>
-    <string name="menu_invitado_login">Login</string>
+    <string name="menu_invitado_buscar">Búsqueda</string>
     <string name="menu_invitado_registro">Registro</string>
     <string name="menu_invitado_salir">Salir</string>
 
@@ -67,21 +67,13 @@
     <string name="lbl_regis_nombre">Nombre</string>
     <string name="lbl_regis_apellido">Apellido</string>
     <string name="lbl_regis_telefono">Telefono</string>
-    <string name="lbl_regis_correo">Correo</string>
+    <string name="lbl_regis_correo">Correo electrónico</string>
     <string name="lbl_regis_contra">Contraseña</string>
     <string name="lbl_regis_contra2">Confirmar Contraseña</string>
+    <string name="lbl_regis_nombreO">Nombre Organización</string>
+    <string name="lbl_regis_dir">Dirección </string>
+    <string name="lbl_regis_cedula">Cedula jurídica</string>
     <string name="btn_regis_listo">Registrar</string>
-    <string name="title_activity_admin">AdminActivity</string>
-    <string name="nav_header_title">Android Studio</string>
-    <string name="nav_header_subtitle">android.studio@android.com</string>
-    <string name="nav_header_desc">Navigation header</string>
-    <string name="action_settings">Settings</string>
 
-    <string name="menu_home">Home</string>
-    <string name="menu_gallery">Gallery</string>
-    <string name="menu_slideshow">Slideshow</string>
-    <string name="menu_tools">Tools</string>
-    <string name="menu_share">Share</string>
-    <string name="menu_send">Send</string>
 
 </resources>

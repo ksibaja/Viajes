@@ -8,11 +8,8 @@
             android:id="@+id/nav_ver"
             android:title="@string/menu_invitado_ver" />
         <item
-            android:id="@+id/nav_login"
-            android:title="@string/menu_invitado_login" />
-        <item
-            android:id="@+id/nav_registro"
-            android:title="@string/menu_invitado_registro" />
+            android:id="@+id/nav_buscar"
+            android:title="@string/menu_invitado_buscar" />
         <item
             android:id="@+id/nav_salir"
             android:title="@string/menu_invitado_salir" />

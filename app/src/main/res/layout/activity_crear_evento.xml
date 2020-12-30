@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -10,15 +11,13 @@
     <android.support.design.widget.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="@string/label_nombre">
+        android:hint="@string/label_categoria">
 
-        <EditText
-            android:id="@+id/txtNombre"
+        <Spinner
+            android:id="@+id/spinner"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:inputType="textPersonName"
-            tools:ignore="Autofill,LabelFor" />
+            android:layout_height="50dp" />
+
     </android.support.design.widget.TextInputLayout>
 
     <android.support.design.widget.TextInputLayout
@@ -38,16 +37,19 @@
     <android.support.design.widget.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="@string/label_fecha">
+        android:focusable="false"
+        android:hint="@string/label_fecha"
+        android:id="@+id/inputFecha"
+        >
 
         <EditText
             android:id="@+id/txtFecha"
+            android:focusable="false"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:ems="10"
-            android:inputType="date"
-            tools:ignore="Autofill,LabelFor" />
+            tools:ignore="Autofill,LabelFor,TextFields" />
     </android.support.design.widget.TextInputLayout>
+
 
     <android.support.design.widget.TextInputLayout
         android:layout_width="match_parent"
@@ -69,7 +71,7 @@
         android:hint="@string/label_descripcion">
 
         <EditText
-            android:id="@+id/txtDescripcion"
+            android:id="@+id/txtDetalle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"

@@ -8,7 +8,10 @@
             android:id="@+id/nav_ver"
             android:title="@string/menu_user_ver" />
         <item
-            android:id="@+id/nav_comprar"
+            android:id="@+id/nav_buscar"
+            android:title="@string/menu_invitado_buscar" />
+        <item
+            android:id="@+id/nav_pago"
             android:title="@string/menu_user_comprar" />
         <item
             android:id="@+id/nav_config"

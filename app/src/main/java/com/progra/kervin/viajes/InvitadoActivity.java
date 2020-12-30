@@ -2,6 +2,7 @@ package com.progra.kervin.viajes;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.annotation.NonNull;
 import android.support.v4.view.GravityCompat;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.view.MenuItem;
@@ -28,6 +29,12 @@ public class InvitadoActivity extends AppCompatActivity
         drawer.addDrawerListener(toggle);
         toggle.syncState();
         navigationView.setNavigationItemSelectedListener(this);
+
+        cargarEventos();
+    }
+
+    public void cargarEventos() {
+
     }
 
     @Override
@@ -64,16 +71,12 @@ public class InvitadoActivity extends AppCompatActivity
 
     @SuppressWarnings("StatementWithEmptyBody")
     @Override
-    public boolean onNavigationItemSelected(MenuItem item) {
+    public boolean onNavigationItemSelected(@NonNull MenuItem item) {
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
         if (id == R.id.nav_ver) {
             // Handle the camera action
-        } else if (id == R.id.nav_login) {
-
-        } else if (id == R.id.nav_registro) {
-
         } else if (id == R.id.nav_salir) {
             Intent salir = new Intent(this, InicioActivity.class);
             startActivity(salir);

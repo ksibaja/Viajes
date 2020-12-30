@@ -11,8 +11,8 @@
             android:id="@+id/nav_crear"
             android:title="@string/menu_org_crear" />
         <item
-            android:id="@+id/nav_ver"
-            android:title="@string/menu_org_ver" />
+            android:id="@+id/nav_datos"
+            android:title="@string/menu_org_datos" />
         <item
             android:id="@+id/nav_config"
             android:title="@string/menu_org_config" />
